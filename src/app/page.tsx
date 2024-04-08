@@ -39,37 +39,44 @@ export default function Home() {
   return (
           <>
         <div className="">
-          <div>
-          <div className='lg:py-40 py-24 lg:px-60 md:px-24 px-6 max-w-6xl'>
-          <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-            Your home tution for high-quality{' '}
-            <span className='text-green-600'>
-              study lorem
-            </span>
-            .
-          </h1>
-          <p className='mt-6 text-lg max-w-prose text-muted-foreground'>
-            Welcome to home_tution. Every tutor on our
-            platform is verified by our team to ensure our
-            highest quality standards.
-          </p>
-          <div className='flex flex-col sm:flex-row gap-4 mt-6'>
-            <Link
-              href={'https://forms.gle/9CyijoguGUuWeLs9A'} target={'_blank'}
-              className={buttonVariants()}>
-              Request a Tutor
-            </Link>
-            <Button variant='ghost'>
-              <Link href={'https://forms.gle/mKsQApGzWq4uiWsD9'} target={'_blank'}>
-              Register as a Tutor &rarr;
-              </Link>
-            </Button>
+          <div className='lg:bg-[url("/media/bht_banner.png")] bg-[url("/media/mobilehero.jpg")]  bg-cover bg-no-repeat lg:bg-contain lg:bg-right-bottom'>
+            <div className='lg:min-h-[90vh] lg:py-40 py-24 lg:px-60 md:px-24 px-6 bg-cover lg:backdrop-blur-none backdrop-blur-sm'>
+              <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl max-w-2xl'>
+                Your home tution for high-quality{' '}
+                  <span className='text-green-600'>
+                  study lorems
+                  </span>
+                  .
+              </h1>
+              <p className='mt-6 text-lg text-muted-foreground max-w-lg'>
+                Welcome to home_tution. Every tutor on our
+                platform is verified by our team to ensure our
+                highest quality standards.
+              </p>
+              <div className='mt-6 text-lg max-w-xl bg-gray-100/50 p-5 rounded-xl text-gray-800'>
+                <Link href={'https://forms.gle/9CyijoguGUuWeLs9A'} target={'_blank'}>
+                  Book your class right now by calling on 0000000000 &ensp; &rarr;
+                </Link>
+              </div>
+              <div className='flex flex-col sm:flex-row gap-4 mt-6'>
+                <Link
+                  href={'https://forms.gle/9CyijoguGUuWeLs9A'} target={'_blank'}
+                  className={buttonVariants()}>
+                  Or Request a Tutor
+                </Link>
+                <Button variant='ghost'>
+                  <Link href={'https://forms.gle/mKsQApGzWq4uiWsD9'} target={'_blank'}>
+                  Register as a Tutor &rarr;
+                  </Link>
+                </Button>
+              </div>
+              
+            </div>
+
+            {/* <div className="">
+              <Image src={'/media/bht_banner.png'} fill alt="" className="object-contain bottom-0"></Image>
+            </div> */}
           </div>
-        </div>
-        <div>
-          
-        </div>
-        </div>
 
 
       <section className='border-t border-gray-200 bg-gray-100/50 backdrop-blur-md lg:px-60 md:px-24 px-6'>
