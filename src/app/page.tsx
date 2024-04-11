@@ -40,7 +40,7 @@ export default function Home() {
           <>
         <div className="">
           <div className='lg:bg-[url("/media/bht_banner.png")] bg-[url("/media/mobilehero.jpg")]  bg-cover bg-no-repeat lg:bg-contain lg:bg-right-bottom'>
-            <div className='lg:min-h-[90vh] lg:py-40 py-24 lg:px-60 md:px-24 px-6 bg-cover lg:backdrop-blur-none backdrop-blur-sm'>
+            {/* <div className='lg:min-h-[90vh] lg:py-40 py-24 lg:px-60 md:px-24 px-6 bg-cover lg:backdrop-blur-none backdrop-blur-sm'>
               <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl max-w-2xl'>
                 Your home tution for high-quality{' '}
                   <span className='text-green-600'>
@@ -71,15 +71,34 @@ export default function Home() {
                 </Button>
               </div>
               
-            </div>
-
-            {/* <div className="">
-              <Image src={'/media/bht_banner.png'} fill alt="" className="object-contain bottom-0"></Image>
             </div> */}
+
+        <div className='py-28 lg:text-left text-center flex flex-col lg:items-start items-center max-w-5xl lg:backdrop-blur-none backdrop-blur-sm lg:px-40 md:px-24 px-6'>
+          <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl backdrop-blur-sm'>
+            <span className="lg:text-8xl text-6xl">Home Tutor</span> <br /> Learn at{' '}
+            <span className='text-green-600'>
+              your comfort
+            </span>
+            .
+          </h1>
+          <p className='mt-6 text-lg max-w-prose lg:text-muted-foreground backdrop-blur-sm'>
+            Got bored with the rigid methods of learning,
+            Now learn with us at your own pace and comfort.
+            Book a free trial class now,
+          </p>
+          <div className='flex flex-col sm:flex-row gap-4 mt-6'>
+            <Link
+              href={'https://forms.gle/9CyijoguGUuWeLs9A'} target={'_blank'}
+              className={buttonVariants()}>
+              Request a Tutor &ensp; &rarr;
+            </Link>
           </div>
+        </div>
+
+        </div>
 
 
-      <section className='border-t border-gray-200 bg-gray-100/50 backdrop-blur-md lg:px-60 md:px-24 px-6'>
+      <section className='border-t border-gray-200 bg-gray-100/50 backdrop-blur-md lg:px-40 md:px-24 px-6'>
         <div className='py-20'>
           <div className='grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0'>
             {perks.map((perk) => (
