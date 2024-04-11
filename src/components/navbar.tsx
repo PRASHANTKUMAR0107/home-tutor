@@ -74,14 +74,14 @@ const Navbar = () => {
 
         {/* Mobile Navigation Items */}
         {navItems.map(item => (
+          <Link href={item.add}>
           <li
             key={item.id}
             className='p-4 border-b hover:bg-green-200 duration-300 hover:text-black cursor-pointer border-gray-200'
           >
-            <Link href={item.add}>
             {item.text}
-            </Link>
           </li>
+            </Link>
         ))}
       </ul>
     </div>
