@@ -76,6 +76,7 @@ const Navbar = () => {
         {navItems.map(item => (
           <Link href={item.add} key={item.id}>
           <li
+            key={item.id}
             className='p-4 border-b hover:bg-green-200 duration-300 hover:text-black cursor-pointer border-gray-200'
           >
             {item.text}
